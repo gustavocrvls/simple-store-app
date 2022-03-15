@@ -29,6 +29,7 @@
     "import/prefer-default-export": "off",
     "import/no-unresolved": "error",
     "no-use-before-define": "warn",
+    "react/style-prop-object": "warn",
     "react/jsx-filename-extension": [
       1,
       {
