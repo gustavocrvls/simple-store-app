@@ -1,11 +1,17 @@
-import { Text, View } from 'react-native';
-import { useCartContext } from '../../contexts/cart/cart';
+import { useNavigation } from '@react-navigation/native';
+import { View } from 'react-native';
+import { Button } from '../../components/button';
 
 export function Home() {
-  const { items } = useCartContext();
+  const navigation = useNavigation();
+
   return (
     <View>
-      <Text>Items - {items.length}</Text>
+      <Button
+        bgColor="teal"
+        onPress={() => navigation.navigate('Cart')}
+        title="click me"
+      />
     </View>
   );
 }
